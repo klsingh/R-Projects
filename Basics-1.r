@@ -73,7 +73,7 @@ sd(a,na.rm = TRUE)
 #Calculating Median
 median(a,na.rm = TRUE)
 
-#Calculating Mode by creating function
+#Calculating Mode by creating function as R do not have in-built function to calculate mode 
 getmode <- function(a){
   uniqa <- unique(a)
   uniqa[which.max(tabulate(match(a, uniqa)))]
